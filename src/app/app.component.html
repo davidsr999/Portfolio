@@ -1,0 +1,35 @@
+<div #prueba class="container">
+    <div  class="navbar">
+        <app-navbar (inicioEmit)="scrollInicio()"
+        (sobreMiEmit)="scrollSobreMi()"></app-navbar>
+    </div>
+
+
+
+    <div class="container-presentacion">
+        <div class="presentacion-info">
+            <div class="cont-primero">
+                <h1 class="an-1">Desarrollador Front end</h1>
+                <p>Me gusta crear proyectos FrontEnd con una experiencia de usuario satisfactoria y cómoda </p>
+            </div>
+            <div class="cont-primero">
+                <h1>Físico</h1>
+                <p>Pasión por comprender cómo funciona el Universo tanto a escalas
+                    infinitamente pequeñas como infinitamente grandes </p>
+            </div>
+        </div>
+
+        <div class="presentacion-image">
+            <img src="../assets/programmer.png" alt="IMAGE">
+            <!-- IMAGES -->
+        </div>
+    </div>
+
+    <div class="about-me" #sobreMi>
+    <app-sobre-mi ></app-sobre-mi>
+    </div>
+
+    <h1>PORTFOLIO EN CONSTRUCCIÓN :)</h1>
+
+  
+</div> 

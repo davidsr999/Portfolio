@@ -1,0 +1,78 @@
+<!-- <div class="container">
+    <div class="card">
+        <div class="title">
+            Hola! Soy David
+        </div>
+        <div class="text">
+            Me encanta diseñar proyectos de páginas web responsive fáciles de manejar y atractivas para el cliente. He aprendido por mi mismo
+            desarrollo Front end y tengo muchas ganas de tener una oportunidad para desarrollarme en la práctica. 
+        </div>
+        
+    </div>
+</div> -->
+
+
+
+
+<div class="cards">
+    <div class="card hover-effect">
+        <div class="card-top">
+            <div class="card-title">
+            <i class="fa-solid fa-laptop fa-xl"></i>
+               Desarrollador Front End
+            </div>
+            <div class="card-description">
+                Me gusta escribir páginas web con un uso sencillo, interactivo y  diseños límpidos
+            </div>
+        </div>
+
+        <div class="card-bottom">
+            <div class="bottom-subcard">
+                <p>Lenguajes que utilizo:</p>
+
+                <ul>
+                    <!-- <li>HTML 
+                        <mat-progress-bar
+                        class="progress-bar"
+                        [color]="color"
+                        [mode]="mode"
+                        [value]="value"
+                        [bufferValue]="bufferValue">
+                        </mat-progress-bar>
+                    </li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>NodeJs</li> -->
+                    <li *ngFor="let el of languages;">
+                        {{el.lenguaje}}
+                        <mat-progress-bar
+                        class="progress-bar"
+                        [color]="'accent'"
+                        [mode]="'determinate'"
+                        [value]="el.progress">
+                        </mat-progress-bar>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-subcard">
+                <p>Herramientos que utilizo </p>
+
+                <ul>
+                    <li *ngFor="let el of herramientas;">
+                        {{el.herramienta}}
+                        <mat-progress-bar
+                        class="progress-bar"
+                        [color]="'accent'"
+                        [mode]="'determinate'"
+                        [value]="el.progress">
+                        </mat-progress-bar>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+

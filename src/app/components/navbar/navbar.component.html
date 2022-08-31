@@ -1,0 +1,28 @@
+
+<div class="navbar">
+    <div class="navbar-title">
+        Mi Portfolio
+    </div>
+
+    <a #toggle (click)="onClick()" href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+
+    <!-- <div class="navbar-links" [ngStyle]="{'display': display ? 'flex': 'none'}"> -->
+    <div class="navbar-links" [ngClass]="{'oculto': display}">
+        <ul>
+            <li><a (click)="onInicio()" >Inicio</a></li>
+            <li><a (click)="onSobreMi()">Sobre mí</a></li>
+            <li><a >Proyectos</a></li>
+            <li><a >Contacto</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- <div [ngSwitch]="true">
+<div *ngSwitchCase="platform.BLINK">
+    Chrome
+</div>
+</div> -->
