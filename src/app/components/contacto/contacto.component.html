@@ -1,1 +1,52 @@
-<p>contacto works!</p>
+<mat-card style="margin-top: 10px">
+    <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-grid-list cols="1" rowHeight="100px">
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho" >
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName="name" autocomplete="off">
+              </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho" >
+                <mat-label>Apellidos</mat-label>
+                <input matInput formControlName="apellidos" autocomplete="off">
+              </mat-form-field>
+            </mat-grid-tile>
+
+            <!-- <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-form-field class="ancho">
+                    <mat-label>Select</mat-label>
+                    <mat-select formControlName="sexo">
+                      <mat-option value="one">Hombre</mat-option>
+                      <mat-option value="two">Mujer</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </mat-grid-tile> -->
+
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho" >
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" autocomplete="off">
+                <mat-error *ngIf="form.controls['email'].invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-form-field class="ancho">
+                    <mat-label>Comentario...</mat-label>
+                    <textarea matInput formControlName="comentario"></textarea>
+                  </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <button [disabled]="form.invalid" type="submit" mat-raised-button color="primary">
+                  Enviar</button>
+            </mat-grid-tile>
+            
+        </mat-grid-list>     
+    </form>
+    <div class="out"></div>
+</mat-card>
+
+

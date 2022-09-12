@@ -1,14 +1,29 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-declare var anime: any;
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    // animation block
+  ]
 })
 export class AppComponent {
   title = 'Portfolio';
+  a: boolean = false;
+  
+
+
+
   @ViewChild('prueba') element!: ElementRef;
   @ViewChild('sobreMi') element1!: ElementRef;
 
@@ -17,9 +32,11 @@ export class AppComponent {
   }
 
   scrollSobreMi() {
-    this.element1.nativeElement.scrollIntoView({behavior: 'smooth', block: 'center'});
+    window.scrollTo({top: 815.3333435058594,
+                      behavior: 'smooth'});
   }
 
+  
 
 
 

@@ -6,11 +6,48 @@
     justify-content: center;
     background-color: rgb(221, 211, 232);
     padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parte-superior {
+    width: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-superior .content {
+    font-size: 1.2rem;
+    width: 30%;
+    text-align: start;
+    line-height: 1.4rem;
+    padding: 3rem 2rem;
+    margin: 0 8rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px;
+}
+
+#derecha {
+    margin-top: -1rem !important;
+    align-self: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.15)    1.95px 1.95px 2.6px;
+}
+
+
+.separador {
+    width: 100%;
+    height: 8rem;
 }
 
 .card {
     width: 30rem;
     height: 30rem;
+    margin-top: 20px;
     padding: 2rem 1rem;
     /* background-color: #d4caf0; */
     background: rgb(2,0,36);

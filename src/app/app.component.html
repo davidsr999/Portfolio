@@ -1,4 +1,4 @@
-<div #prueba class="container">
+<div class="container">
     <div  class="navbar">
         <app-navbar (inicioEmit)="scrollInicio()"
         (sobreMiEmit)="scrollSobreMi()"></app-navbar>
@@ -25,11 +25,31 @@
         </div>
     </div>
 
+
     <div class="about-me" #sobreMi>
     <app-sobre-mi ></app-sobre-mi>
     </div>
 
-    <h1>PORTFOLIO EN CONSTRUCCIÓN :)</h1>
+    <div class="proyectos">
+        <app-proyectos></app-proyectos>
+    </div>
 
+    <div class="contacto">
+        <app-contacto></app-contacto>
+    </div>
+
+    <div class="bottom">
+        <h1>PORTFOLIO EN CONSTRUCCIÓN :)</h1>
+    </div>
+
+
+    
+  
+    <!-- <div>
+        <app-auxiliar>
+            <app-subauxiliar style="background-color:red"></app-subauxiliar>
+        </app-auxiliar>
+    </div> -->
   
 </div> 
+
