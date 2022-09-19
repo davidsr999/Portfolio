@@ -7,6 +7,20 @@
 }
 
 
+.prueba {
+    margin-top: 5rem;
+}
+.active {
+    width: 40px;
+    color: red;
+}
+
+.hidden {
+    width: 20px;
+    color: blue;
+}
+
+
 
 
 
@@ -76,6 +90,8 @@
     }
     
 }
+
+
 
 /*Mis cartas de presentacion*/
 

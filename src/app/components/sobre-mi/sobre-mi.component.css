@@ -29,13 +29,22 @@
     margin: 0 8rem;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px; */
+    box-shadow: -2rem -2rem 2rem rgba(0, 0, 0, 0.6); 
 }
 
 #derecha {
     margin-top: -1rem !important;
     align-self: flex-end;
-    box-shadow: rgba(0, 0, 0, 0.15)    1.95px 1.95px 2.6px;
+    box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.6);
+}
+
+#arriba {
+    box-shadow: -2rem -2rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+#abajo {
+    box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.6);
 }
 
 
@@ -53,7 +62,10 @@
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,0.6) 58%, rgba(0,212,255,1) 100%);
     border-radius: 15px;
+    box-shadow: 0 0 4rem 1rem rgba(65,9,121,0.5),
+     inset 0 0 1rem 1rem rgba(65,9,121,0.5);
 }
+
 
 .card-title {
     text-align: center;

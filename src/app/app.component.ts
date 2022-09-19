@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {
   trigger,
@@ -21,19 +21,36 @@ export class AppComponent {
   title = 'Portfolio';
   a: boolean = false;
   
-
+  status: boolean = false;
 
 
   @ViewChild('prueba') element!: ElementRef;
   @ViewChild('sobreMi') element1!: ElementRef;
+  @HostListener('window:scroll') onScroll(e: Event): void {
+    console.log(this.getYPosition);
+    this.toggle();
+  }
+  constructor() {
+  }
+
+  getYPosition(e: Event): number {
+    return (e.target as Element).scrollTop;
+  }
+  
 
   scrollInicio() {
+    console.log('on inicio event');
     this.element.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
 
   scrollSobreMi() {
     window.scrollTo({top: 815.3333435058594,
                       behavior: 'smooth'});
+  }
+
+  toggle() {
+    this.status = !this.status;
+    console.log('toggled');
   }
 
   
