@@ -1,0 +1,37 @@
+<div class="containerA">
+<div class="container">
+    <div class="buttons-carousel">
+        <div class="circle">
+            <mat-icon (click)="setBack()">keyboard_arrow_left</mat-icon>
+        </div>
+
+        <div class="circle">
+            <mat-icon (click)="setNext()">keyboard_arrow_right</mat-icon>
+        </div>
+        
+        
+    </div>
+    <div class="ventana">
+        <div class="subventana">
+        <div class="images" [ngStyle]="{'left': marginLeft +'rem'}">
+            <ng-container *ngFor="let it of items">
+                <img src={{it.src}} alt="">
+            </ng-container>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="text-container">
+    <div class="title">
+        <h1> 01. Proyecto: Buscador de Wikipedia</h1>
+    </div>
+    <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veritatis enim magnam voluptatibus dicta. Similique, voluptatem, ipsum nemo magni, earum maxime dolore numquam aspernatur sit culpa a ex quae voluptatibus.</p>
+
+    </div>
+    
+</div>
+</div>

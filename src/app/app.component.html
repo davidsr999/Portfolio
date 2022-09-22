@@ -1,7 +1,9 @@
-<div class="container" #prueba>
+<div class="container over" #inicio>
     <div  class="navbar">
         <app-navbar (inicioEmit)="scrollInicio()"
-        (sobreMiEmit)="scrollSobreMi()"></app-navbar>
+        (sobreMiEmit)="scrollSobreMi()"
+        (proyectos)="scrollProyectos()"
+        (contacto)="scrollContacto()"></app-navbar>
     </div>
 
     
@@ -28,20 +30,20 @@
     </div>
 
 
-    <div class="about-me" #sobreMi>
+    <div class="about-me over" #sobreMi>
     <app-sobre-mi ></app-sobre-mi>
     </div>
 
-    <div class="proyectos">
+    <div class="proyectos over" #proyecto>
         <app-proyectos></app-proyectos>
     </div>
 
-    <div class="contacto">
+    <div class="contacto over" #contacto>
         <app-contacto></app-contacto>
     </div>
 
-    <div class="bottom">
-        <h1>PORTFOLIO EN CONSTRUCCIÓN :)</h1>
+    <div class="piedepagina over ">
+        <h1>Diseñado y construido por <span>David Sanz</span> </h1>
     </div>
 
 

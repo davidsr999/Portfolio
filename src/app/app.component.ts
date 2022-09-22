@@ -24,10 +24,12 @@ export class AppComponent {
   status: boolean = false;
 
 
-  @ViewChild('prueba') element!: ElementRef;
+  @ViewChild('inicio') element!: ElementRef;
   @ViewChild('sobreMi') element1!: ElementRef;
+  @ViewChild('proyecto') element2!: ElementRef;
+  @ViewChild('contacto') element3!: ElementRef;
   @HostListener('window:scroll') onScroll(e: Event): void {
-    console.log(this.getYPosition);
+    // console.log(this.getYPosition);
     this.toggle();
   }
   constructor() {
@@ -39,7 +41,7 @@ export class AppComponent {
   
 
   scrollInicio() {
-    console.log('on inicio event');
+    // console.log('on inicio event');
     this.element.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
 
@@ -48,10 +50,20 @@ export class AppComponent {
                       behavior: 'smooth'});
   }
 
+  scrollProyectos() {
+    this.element2.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
+
+  scrollContacto() {
+    this.element3.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
+
   toggle() {
     this.status = !this.status;
-    console.log('toggled');
+    // console.log('toggled');
   }
+
+
 
   
 

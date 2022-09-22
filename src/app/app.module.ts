@@ -22,6 +22,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { CardComponent } from './components/proyectos/card/card.component';
+import { Card2Component } from './components/proyectos/card2/card2.component';
 
 
 
@@ -39,6 +41,8 @@ import {MatIconModule} from '@angular/material/icon';
     SobreMiComponent,
     AuxiliarComponent,
     SubauxiliarComponent,
+    CardComponent,
+    Card2Component,
 
   ],
   imports: [

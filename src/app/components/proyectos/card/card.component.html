@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="ds-carousel">
+        <div class="buttons-carousel">
+            <mat-icon (click)="setBack()">keyboard_arrow_left</mat-icon>
+            <mat-icon (click)="setNext()">keyboard_arrow_right</mat-icon>
+        </div>
+    
+        <div class="content-carousel">
+            <ng-container *ngFor="let section of items">
+                <!-- <div class="item" [ngStyle]="{'background-image': 'url(' + section.src+ ')',
+            'margin-left': section.marginLeft + '%'}">
+    
+                </div> -->
+                <div class="item" [ngStyle]="{'background-image': 'url(' + section.src + ')', 'margin-left': section.marginLeft + '%'}">
+                </div>
+            </ng-container>
+        </div>
+        
+    </div>
+    </div>

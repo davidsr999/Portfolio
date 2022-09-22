@@ -1,21 +1,32 @@
-<div class="container">
-    <div class="card">
-        <div class="card-content">
-            <div class="images">
-            <img src="assets/wikiproject1.png" alt="imagenwiki">
-            <img src="assets/wikiproject2.png" alt="imagenwiki">
-            <img src="assets/wikiproject3.png" alt="imagenwiki">
-            <img src="assets/wikiproject4.png" alt="imagenwiki">
-        </div>
-        
-        </div>
-        <div class="button-right" style="color: 'red;'" [@toggle]="istate? 'in': 'out'" (click)="toggle()">
-            <mat-icon>keyboard_arrow_right</mat-icon>
-        </div>
-        <div class="button-left">
-            <mat-icon>keyboard_arrow_left</mat-icon>
-        </div>
+
+<!-- <div class="container">
+<div class="ds-carousel">
+    <div class="buttons-carousel">
+        <mat-icon (click)="setBack()">keyboard_arrow_left</mat-icon>
+        <mat-icon (click)="setNext()">keyboard_arrow_right</mat-icon>
     </div>
+
+    <div class="content-carousel">
+        <ng-container *ngFor="let section of items">
+            <div class="item" [ngStyle]="{'background-image': 'url(' + section.src + ')', 'margin-left': section.marginLeft + '%'}">
+            </div>
+        </ng-container>
+    </div>
+    
+</div>
+<div class="descripcion">
+    <p>hola que tal esto es una prueba de texto</p>
 </div>
 
+</div> -->
 
+<!-- <div class="cards">
+<app-card [items]="items1"></app-card>
+<div class="descripcion">
+    <p>hola</p>
+</div>
+</div> -->
+
+<div class="cards2">
+<app-card2 [items]="items"></app-card2>
+</div>

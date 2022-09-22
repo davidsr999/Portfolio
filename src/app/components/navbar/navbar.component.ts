@@ -11,6 +11,8 @@ export class NavbarComponent implements OnInit {
   display: boolean = true;
   @Output() inicioEmit = new EventEmitter();
   @Output() sobreMiEmit = new EventEmitter();
+  @Output() proyectos = new EventEmitter();
+  @Output() contacto = new EventEmitter();
 
   constructor(
   ) { }
@@ -32,6 +34,14 @@ export class NavbarComponent implements OnInit {
   
   onClick() {
     this.display = !this.display;
+  }
+
+  onProyectos() {
+    this.proyectos.emit();
+  }
+
+  onContacto() {
+    this.contacto.emit();
   }
 
 }

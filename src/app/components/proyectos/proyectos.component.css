@@ -1,7 +1,9 @@
 .container {
+    position: relative;
     margin: 0 2rem;
     margin-bottom: 10rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -32,11 +34,11 @@
 }
 
 .card-content .images:active {
-    transform: translateX(-159.45rem);
+    transform: translateX(-53.14rem);
 }
 
 .card-content img{
-    height: 80%;
+    height: 400px;
     width: 97%;
     border: blue 1px solid;
 }
@@ -66,4 +68,64 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.ds-carousel {
+    width: 70%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ds-carousel::before {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .48);
+}
+
+.content-carousel {
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    overflow: scroll;
+}
+
+.content-carousel .item {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 100%;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s all ease-in;
+
+}
+
+.buttons-carousel {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+.cards {
+    width: 100%;
+    margin-left: 10rem;
+}
+
+
+.cards2 {
+    width: 100%;
+    /* justify-content: center; */
 }
