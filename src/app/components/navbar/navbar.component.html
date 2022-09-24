@@ -4,13 +4,12 @@
         David Sanz
     </div>
 
-    <a #toggle (click)="onClick()" href="#" class="toggle-button">
+    <a class="toggle-button" (click)="onToggle()">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
     </a>
 
-    <!-- <div class="navbar-links" [ngStyle]="{'display': display ? 'flex': 'none'}"> -->
     <div class="navbar-links" [ngClass]="{'oculto': display}">
         <ul>
             <li><a (click)="onInicio()" >Inicio</a></li>
@@ -20,9 +19,3 @@
         </ul>
     </div>
 </div>
-
-<!-- <div [ngSwitch]="true">
-<div *ngSwitchCase="platform.BLINK">
-    Chrome
-</div>
-</div> -->

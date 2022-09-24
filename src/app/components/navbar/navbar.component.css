@@ -13,6 +13,12 @@
     margin: .5rem;
 }
 
+.navbar-title:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: .5s ease;
+}
+
 .navbar-links ul{
     display: flex; 
 
@@ -60,6 +66,9 @@
     background-color: white;
     border-radius: 10px;
 }
+
+
+
 
 
 

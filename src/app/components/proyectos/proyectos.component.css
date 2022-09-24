@@ -40,7 +40,7 @@
 .card-content img{
     height: 400px;
     width: 97%;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
 }
 
 .button-right {
@@ -128,4 +128,26 @@
 .cards2 {
     width: 100%;
     /* justify-content: center; */
+    display: flex;
+}
+
+.text-container {
+    flex-grow: 2;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    width: 30%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.text-container .title {
+    font-weight: 900;
+    margin-top: 3rem;
+    text-align: end;
+}
+
+.text-container .description {
+
 }

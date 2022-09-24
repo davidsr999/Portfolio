@@ -1,4 +1,4 @@
-import { Component, Renderer2, ElementRef, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
+import { Component, Renderer2, ElementRef, OnInit, ViewChild, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 
 
 @Component({
@@ -6,22 +6,19 @@ import { Component, Renderer2, ElementRef, OnInit, ViewChild, Output, EventEmitt
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
-
+export class NavbarComponent {
   display: boolean = true;
   @Output() inicioEmit = new EventEmitter();
   @Output() sobreMiEmit = new EventEmitter();
   @Output() proyectos = new EventEmitter();
   @Output() contacto = new EventEmitter();
 
+  
+
   constructor(
   ) { }
 
 
-  ngOnInit(): void {
-    
-
-  }
 
   onInicio() {
     this.inicioEmit.emit();
@@ -32,7 +29,7 @@ export class NavbarComponent implements OnInit {
   }
 
   
-  onClick() {
+  onToggle() {
     this.display = !this.display;
   }
 
@@ -43,5 +40,12 @@ export class NavbarComponent implements OnInit {
   onContacto() {
     this.contacto.emit();
   }
+
+
+  onsize() {
+    console.log('cambio')
+  }
+
+
 
 }

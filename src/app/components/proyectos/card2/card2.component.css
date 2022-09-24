@@ -2,7 +2,7 @@
     /* padding-bottom: 5rem; */
     width: 100%;
     /* height: 30rem; */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     padding: 5rem 1rem;
 }
@@ -10,7 +10,7 @@
 .container {
     align-self: flex-end;
     margin-left: 2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 35rem;
     height: 25rem;
     display: flex;
@@ -19,6 +19,7 @@
     position: relative;
     background-color: #ffffff;
     border-radius: 3px;
+    /* border: 1px solid red; */
 }
 
 .ventana {
@@ -74,22 +75,3 @@ img {
 
 
 
-.text-container {
-    flex-grow: 2;
-    padding-left: 1rem;
-    padding-right: 2rem;
-    width: 30%;
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
-}
-
-.text-container .title {
-    margin-top: 3rem;
-    text-align: end;
-}
-
-.text-container .description {
-
-}

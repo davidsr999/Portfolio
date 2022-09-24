@@ -1,5 +1,5 @@
-<div class="container over" #inicio>
-    <div  class="navbar">
+<div class="container"  #inicio >
+    <div  class="navbar" >
         <app-navbar (inicioEmit)="scrollInicio()"
         (sobreMiEmit)="scrollSobreMi()"
         (proyectos)="scrollProyectos()"
@@ -10,16 +10,18 @@
 
 
 
-    <div class="container-presentacion" >
+    <div class="container-presentacion" *ngIf="true">
         <div class="presentacion-info">
             <div class="cont-primero">
                 <h1 class="an-1">Desarrollador Front end</h1>
                 <p>Me gusta crear proyectos FrontEnd con una experiencia de usuario satisfactoria y cómoda </p>
+                <div class="circle-purple" [ngStyle]="{'position': 'relative', 'left': '25.8rem', 'bottom': '1rem'}"></div>
             </div>
             <div class="cont-primero">
                 <h1>Físico</h1>
                 <p>Pasión por comprender cómo funciona el Universo tanto a escalas
                     infinitamente pequeñas como infinitamente grandes </p>
+                <div class="circle-purple" [ngStyle]="{'position': 'relative', 'left': '12.4rem', 'bottom': '1rem'}"></div>
             </div>
         </div>
 
@@ -30,19 +32,19 @@
     </div>
 
 
-    <div class="about-me over" #sobreMi>
+    <div class="about-me" #sobreMi [ngStyle]="{'background-color': false ? 'red': ''}">
     <app-sobre-mi ></app-sobre-mi>
     </div>
 
-    <div class="proyectos over" #proyecto>
+    <div class="proyectos" #proyecto>
         <app-proyectos></app-proyectos>
     </div>
 
-    <div class="contacto over" #contacto>
+    <div class="contacto" #contacto>
         <app-contacto></app-contacto>
     </div>
 
-    <div class="piedepagina over ">
+    <div class="piedepagina" >
         <h1>Diseñado y construido por <span>David Sanz</span> </h1>
     </div>
 
