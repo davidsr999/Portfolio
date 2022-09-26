@@ -32,8 +32,8 @@ export class ContactoComponent implements OnInit {
     let email = this.form.controls['email'].value;
     let comentario = this.form.controls['comentario'].value;
 
-    let el = document.querySelector('.out');
-    el.innerHTML += `nombre: ${name}; apellidos: ${apellidos}; email: ${email}; comentario: ${comentario}`;
+    // let el = document.querySelector('.out');
+    // el.innerHTML += `nombre: ${name}; apellidos: ${apellidos}; email: ${email}; comentario: ${comentario}`;
 
     
     

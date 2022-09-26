@@ -14,8 +14,8 @@ export class SobreMiComponent implements OnInit {
   languages = [{lenguaje: 'HTML 5', progress: 90},
   {lenguaje: 'CSS', progress: 80},
   {lenguaje: 'JavaScript', progress: 70},
-  {lenguaje: 'TypeScript', progress: 65},
-  {lenguaje: 'NodeJS', progress: 30},
+  {lenguaje: 'TypeScript', progress: 60},
+  {lenguaje: 'NodeJS', progress: 20},
 ]
 
 herramientas = [{herramienta: 'Angular 14', progress: 75},

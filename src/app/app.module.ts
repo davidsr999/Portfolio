@@ -24,6 +24,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { CardComponent } from './components/proyectos/card/card.component';
 import { Card2Component } from './components/proyectos/card2/card2.component';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 
 
@@ -60,7 +62,8 @@ import { Card2Component } from './components/proyectos/card2/card2.component';
     MatGridListModule,
     MatSelectModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,9 @@
+
+
 <mat-card style="margin-top: 10px">
-    <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h1>Formulario de Contacto</h1>
+  <hr class="solid">
+    <form action="http://formspree.io/sanzruiz999@gmail.com" [formGroup]="form" (ngSubmit)="onSubmit()">
         <mat-grid-list cols="1" rowHeight="100px">
             <mat-grid-tile [colspan]="1" [rowspan]="1">
             <mat-form-field class="ancho" >

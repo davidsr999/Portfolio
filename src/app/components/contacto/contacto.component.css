@@ -12,3 +12,23 @@
 .ancho {
   width: 20rem;
   }
+
+
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--myorange);
+  }
+
+  hr.solid {
+    border-top: 2px solid var(--myorange);
+    color: var(--mypurple);
+    background-color: var(--myorange);
+    opacity: .5;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    bottom: .8rem;
+  }

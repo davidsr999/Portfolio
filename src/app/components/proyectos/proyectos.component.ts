@@ -20,19 +20,30 @@ export interface Carousel  {
 export const CAROUSEL_DATA: Carousel[] = [
   {
     id: 1,
-    src: "assets/wikiproject1.png"
+    src: "assets/wikipediaapp1.png"
   },
   {
     id: 2,
-    src: "assets/wikiproject2.png"
+    src: "assets/wikipediaapp2.png"
   },
   {
     id: 3,
-    src: "assets/wikiproject3.png"
+    src: "assets/wikipediaapp3.png"
+  }
+]
+
+export const CAROUSEL_DATA2: Carousel[] = [
+  {
+    id: 1,
+    src: "assets/weatherapp1.png"
   },
   {
-    id: 4,
-    src: "assets/wikiproject4.png"
+    id: 2,
+    src: "assets/weatherapp2.png"
+  },
+  {
+    id: 3,
+    src: "assets/weatherapp3.png"
   }
 ]
 
@@ -64,7 +75,7 @@ export class ProyectosComponent implements OnInit {
   // items: Carousel[] = [];
   // carousel_data: Carousel[] = CAROUSEL_DATA;
   items: Carousel[] = CAROUSEL_DATA;
-  items1: Carousel[] = CAROUSEL_DATA;
+  items2: Carousel[] = CAROUSEL_DATA2;
   /*de otra forma */
   slides = [
     {src: "assets/wikiproject1.png"},
