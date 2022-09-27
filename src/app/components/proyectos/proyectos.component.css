@@ -1,4 +1,4 @@
-.container {
+/* .container {
     position: relative;
     margin: 0 2rem;
     margin-bottom: 10rem;
@@ -20,30 +20,29 @@
     align-items: center;
     justify-content: center;
     border: red 1px solid;
-}
-.card-content {
+} */
+/* .card-content {
     width: 100%;
     margin: 0;
     overflow: hidden;
-}
+} */
 
-.card-content .images {
+/* .card-content .images {
     position: relative;
     left: 10px;
     display: flex;
-}
+} */
 
-.card-content .images:active {
+/* .card-content .images:active {
     transform: translateX(-53.14rem);
-}
+} */
 
-.card-content img{
+/* .card-content img{
     height: 400px;
     width: 97%;
-    /* border: blue 1px solid; */
-}
+} */
 
-.button-right {
+/* .button-right {
     position: absolute;
     right: 2.8rem;
     transform: scale(2);
@@ -68,9 +67,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.ds-carousel {
+/* .ds-carousel {
     width: 70%;
     height: 30rem;
     display: flex;
@@ -86,16 +85,16 @@
     top: 0;
     left: 0;
     background-color: rgba(0,0,0, .48);
-}
+} */
 
-.content-carousel {
+/* .content-carousel {
     width: 100%;
     align-self: stretch;
     display: flex;
     overflow: scroll;
-}
+} */
 
-.content-carousel .item {
+/* .content-carousel .item {
     float: left;
     display: flex;
     align-items: center;
@@ -107,27 +106,26 @@
     background-position: center;
     transition: 1s all ease-in;
 
-}
+} */
 
-.buttons-carousel {
+/* .buttons-carousel {
     position: absolute;
     width: 90%;
     display: flex;
     margin: auto;
     justify-content: space-between;
-}
+} */
 
 
 
-.cards {
+/* .cards {
     width: 100%;
     margin-left: 10rem;
-}
+} */
 
 
 .cards2 {
     width: 100%;
-    /* justify-content: center; */
     display: flex;
 }
 
@@ -139,7 +137,6 @@
     height: 25rem;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 
 .text-container .title {
@@ -148,12 +145,53 @@
     text-align: end;
 }
 
-.text-container .description {
-
-}
-
 
 .separador {
     width: 100%;
     height: 4rem;
+}
+
+
+
+
+
+@media (max-width: 750px) {    
+    
+    .cards2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-container {
+        flex-grow: 2;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        width: 90%;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text-container .title {
+        font-weight: 900;
+        margin-top: 3rem;
+        text-align: end;
+    }    
+    
+    .separador {
+        width: 100%;
+        height: 4rem;
+    }
+
+    .card-carousel {
+        width: 100%;    
+    }
+    
+
+
+
+
 }

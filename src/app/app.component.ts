@@ -53,8 +53,10 @@ export class AppComponent implements OnInit, OnDestroy{
   listener: any;
 
   hideCircles = false;
-
-  constructor(private renderer2: Renderer2, private responsive: BreakpointObserver ) {
+  hide = false;
+  is_phone = false;
+  private responsive: BreakpointObserver
+  constructor(private renderer2: Renderer2,  ) {
     // this.listener = this.renderer2.listen('window', 'scroll', (e) => {
     //   console.log('scroll');
     // })
@@ -63,13 +65,15 @@ export class AppComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
     console.log('Small'+ Breakpoints.Medium);
     this.responsive.observe([
-      '(max-width: 600px)'
+      '(max-width: 750px)'
     ]).subscribe(result => {
       if(result.matches){
         this.hideCircles = true;
+        this.hide = true;
         console.log(this.hideCircles);
       } else {
         this.hideCircles  = false;
+        this.hide = false;
         console.log(this.hideCircles);
       }
     })

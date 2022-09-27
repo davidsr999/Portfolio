@@ -15,7 +15,6 @@
 
 .parte-superior {
     width: 100%;
-    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     font-weight: 580 !important;
@@ -30,12 +29,11 @@
     margin: 0 8rem;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px; */
     box-shadow: -2rem -2rem 2rem rgba(0, 0, 0, 0.6); 
 }
 
 #derecha {
-    margin-top: -1rem !important;
+    margin-top: -1rem;
     align-self: flex-end;
     box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.6);
 }
@@ -59,7 +57,6 @@
     height: 30rem;
     margin-top: 20px;
     padding: 2rem 1rem;
-    /* background-color: #d4caf0; */
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,0.6) 58%, rgba(0,212,255,1) 100%);
     border-radius: 15px;
@@ -74,12 +71,6 @@
     
 }
 
-.card-description {
-    text-align: center;
-    margin: 1rem 5rem;
-    /* font-size: 1.1rem; */
-}
-
 .bottom-subcard {
     text-align: center;
 }
@@ -88,7 +79,7 @@
     margin-top: 10px;
     color:rgb(51, 6, 91);
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .bottom-subcard li {
@@ -103,4 +94,114 @@
 
 .progress-bar {
     width: 15rem;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+    .cards {
+        margin: 12rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(221, 211, 232);
+        padding: 15rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .parte-superior {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-weight: 580 !important;
+    }
+    
+    .parte-superior .content {
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+        line-height: 1.5rem;
+        padding: 2rem .8rem;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        box-shadow: 0; 
+    }
+    
+    #derecha {
+        box-shadow: none;
+        align-self: center;
+        margin-top: 0;
+    }
+    
+    #arriba {
+        box-shadow: none;
+        align-self: center;
+    }
+    
+    #abajo {
+        box-shadow: none;
+        align-self: center;
+    }
+    
+    
+    .separador {
+        width: 100%;
+        height: 4rem;
+    }
+    
+    .card {
+        width: 82%;
+        height: 30rem;
+        margin-top: 20px;
+        padding: 2rem 1rem;
+        /* background-color: #d4caf0; */
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,0.6) 58%, rgba(0,212,255,1) 100%);
+        border-radius: 15px;
+        box-shadow: 0 0 4rem 1rem rgba(65,9,121,0.5),
+         inset 0 0 1rem 1rem rgba(65,9,121,0.5);
+    }
+    
+    
+    .card-title {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #e8e6e6;
+        
+    }
+    
+    .bottom-subcard {
+        text-align: center;
+    }
+    
+    .bottom-subcard p {
+        margin-top: 10px;
+        color:rgb(51, 6, 91);
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+    
+    .bottom-subcard li {
+        margin: 5px 0;
+        margin-bottom: 10px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .progress-bar {
+        width: 15rem;
+    }
+
+
+
 }

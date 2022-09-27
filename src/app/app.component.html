@@ -10,7 +10,8 @@
 
 
 
-    <div class="container-presentacion" *ngIf="true" >
+    <div class="container-presentacion" >
+    <!-- <div [ngClass]="{is_phone: 'container-presentacion'}" *ngIf="true" > -->
         <div class="presentacion-info" @inicioPaginaLeft>
             <div class="cont-primero">
                 <h1 class="an-1">Desarrollador Front end</h1>
@@ -26,22 +27,22 @@
             </div>
         </div>
 
-        <div class="presentacion-image" @inicioPaginaRight>
+        <div class="presentacion-image" @inicioPaginaRight *ngIf="!hide">
             <img src="assets/programmer.png" alt="IMAGE">
             <!-- IMAGES -->
         </div>
     </div>
 
 
-    <div class="about-me" #sobreMi [ngStyle]="{'background-color': false ? 'red': ''}">
+    <div *ngIf="!hide" class="about-me" #sobreMi [ngStyle]="{'background-color': false ? 'red': ''}">
     <app-sobre-mi ></app-sobre-mi>
     </div>
 
-    <div class="proyectos" #proyecto>
+    <div *ngIf="!hide" class="proyectos" #proyecto>
         <app-proyectos></app-proyectos>
     </div>
 
-    <div class="contacto" #contacto>
+    <div *ngIf="!hide" class="contacto" #contacto>
         <app-contacto></app-contacto>
     </div>
 
