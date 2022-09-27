@@ -4,17 +4,7 @@
         David Sanz
     </div>
 
-    <div class="links">
-        <a href="https://www.linkedin.com/in/david-sanz-ruiz-884417213/" target="_blank">
-            <i class='fab fa-linkedin fa-3x' style="color: #0a66c2;"></i>
-        </a> 
-        <a href="https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=6970827564446685019" target="_blank">
-            <img src="assets/infojobs.png" style="height: 54px; width: 60px;" alt="">
-        </a>
-        <a href="https://github.com/davidsr999" target="_blank"><i class="fa-brands fa-github fa-3x" style="color: #ffffff"></i></a>
-        
-
-    </div>
+    
 
     
     <a class="toggle-button" (click)="onToggle()">
@@ -24,6 +14,17 @@
     </a>
 
     <div class="navbar-links" [ngClass]="{'oculto': display}">
+        <div class="links">
+            <a href="https://www.linkedin.com/in/david-sanz-ruiz-884417213/" target="_blank">
+                <i id="i1" class='fab fa-linkedin fa-3x' style="color: #0a66c2;"></i>
+            </a> 
+            <!-- <a id="i2" href="https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=6970827564446685019" target="_blank">
+                <img  src="assets/infojobs.png" style="height: 54px; width: 60px;" alt="">
+            </a> -->
+            <a id="i3" href="https://github.com/davidsr999" target="_blank"><i class="fa-brands fa-github fa-3x" style="color: #ffffff"></i></a>
+            
+    
+        </div>
         <ul>
             <li><a (click)="onInicio()" >Inicio</a></li>
             <li><a (click)="onSobreMi()">Sobre mí</a></li>

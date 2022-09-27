@@ -25,7 +25,7 @@ export class ContactoComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.form.value);
+    // console.log(this.form.value);
 
     let name = this.form.controls['name'].value;
     let apellidos = this.form.controls['apellidos'].value;

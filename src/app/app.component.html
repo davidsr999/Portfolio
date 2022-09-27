@@ -10,23 +10,23 @@
 
 
 
-    <div class="container-presentacion" *ngIf="true">
-        <div class="presentacion-info">
+    <div class="container-presentacion" *ngIf="true" >
+        <div class="presentacion-info" @inicioPaginaLeft>
             <div class="cont-primero">
                 <h1 class="an-1">Desarrollador Front end</h1>
                 <p>Soy un físico convertido en desarrollador Front End, me he formado en este campo por mi cuento y estoy deseando
                     poder obtener una oportunidad para trabajar </p>
-                <div class="circle-purple" [ngStyle]="{'position': 'relative', 'left': '19.6rem', 'bottom': '1rem'}"></div>
+                <div class="circle-purple" *ngIf="!hideCircles" [ngStyle]="{'position': 'absolute', 'left': '19.6rem', 'bottom': '0rem'}"></div>
             </div>
             <div class="cont-primero">
                 <h1>Físico Teórico</h1>
                 <p>Pasión por comprender cómo funciona el Universo tanto a escalas
                     infinitamente pequeñas como infinitamente grandes </p>
-                <div class="circle-purple" [ngStyle]="{'position': 'relative', 'left': '23.4rem', 'bottom': '1rem'}"></div>
+                <div class="circle-purple" *ngIf="!hideCircles" [ngStyle]="{'position': 'relative', 'left': '23.4rem', 'bottom': '.5rem'}"></div>
             </div>
         </div>
 
-        <div class="presentacion-image">
+        <div class="presentacion-image" @inicioPaginaRight>
             <img src="assets/programmer.png" alt="IMAGE">
             <!-- IMAGES -->
         </div>

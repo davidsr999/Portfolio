@@ -38,6 +38,10 @@
     column-gap: 5px;
 }
 
+.cont-primero {
+    position: relative;
+}
+
 .cont-primero h1{
     color: var(--mypurple);
     font-size: 3rem;
@@ -64,6 +68,7 @@
     border-radius: 1rem;
     transform: scale(0.9);
     background-color: var(--mydarkpurple);
+    
 }
 
 .presentacion-info .title {

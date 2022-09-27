@@ -1,17 +1,22 @@
 .navbar {
+    position: absolute;
+    top: 0;
     width: 100%;
-    height: 4rem;
+    /* height: 4rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary);
     color: white;
+    z-index: 10;
+   
 }
 
 .navbar-title {
     font-size: 1.5rem;
     font-weight: 900;
     margin: .5rem;
+    padding: .5rem 0;
 }
 
 .navbar-title:hover {
@@ -20,11 +25,18 @@
     transition: .5s ease;
 }
 
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
 .navbar-links ul{
     display: flex; 
+    /* position: relative; */
+    /* bottom: 4rem; */
 
 }
 
@@ -49,10 +61,11 @@
 }
 
 .links {
-    position: relative;
-    bottom: 8px;
-    left: 5px;
-}
+    /* position: relative; */
+    /* bottom: 8px;
+    right: 15rem; */
+    transition: 1s ease-in;
+} 
 
 .links a {
     padding: 0 .5rem;
@@ -76,7 +89,6 @@
     height: 1.8rem;
     width: 1.8rem;
     padding: 0;
-    /* background-color: red; */
     position: relative;
     left: 2rem;
 
@@ -111,9 +123,11 @@
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
     .toggle-button {
+        margin-top: 5px;
         display: flex;
+
     }
 
     .navbar-links {
@@ -145,6 +159,24 @@
 
     .navbar-links.active {
         display: flex;
+    }
+
+
+    .links {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .links a {
+        margin: .5rem 0;
+    }
+
+    .navbar-links ul{
+        margin-right: 3.5rem;
+        margin-bottom: 1rem;
+    
     }
 
 

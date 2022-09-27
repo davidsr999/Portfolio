@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {
   trigger,
@@ -6,8 +6,12 @@ import {
   style,
   animate,
   transition,
+  keyframes,
+  useAnimation,
   // ...
 } from '@angular/animations';
+import { slideInLeft, slideInRight } from './animations';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -15,9 +19,19 @@ import {
   styleUrls: ['./app.component.css'],
   animations: [
     // animation block
+    trigger('inicioPaginaLeft', [
+      transition(':enter', [
+        useAnimation(slideInLeft)
+      ])
+    ]),
+    trigger('inicioPaginaRight', [
+      transition(':enter', [
+        useAnimation(slideInRight)
+      ])
+    ])
   ]
 })
-export class AppComponent{
+export class AppComponent implements OnInit, OnDestroy{
   title = 'Portfolio';
   a: boolean = false;
   
@@ -31,16 +45,39 @@ export class AppComponent{
   @ViewChild('proyecto') element2!: ElementRef;
   @ViewChild('contacto') element3!: ElementRef;
   @ViewChild('piedepagina') element4!: ElementRef;
+  
   @HostListener('window:scroll') onScroll(e: Event): void {
-    // console.log(this.getYPosition);
-    this.toggle();
+    // console.log(this.getYPosition(e));
+ }
+
+  listener: any;
+
+  hideCircles = false;
+
+  constructor(private renderer2: Renderer2, private responsive: BreakpointObserver ) {
+    // this.listener = this.renderer2.listen('window', 'scroll', (e) => {
+    //   console.log('scroll');
+    // })
   }
-  constructor() {
+
+  ngOnInit(): void {
+    console.log('Small'+ Breakpoints.Medium);
+    this.responsive.observe([
+      '(max-width: 600px)'
+    ]).subscribe(result => {
+      if(result.matches){
+        this.hideCircles = true;
+        console.log(this.hideCircles);
+      } else {
+        this.hideCircles  = false;
+        console.log(this.hideCircles);
+      }
+    })
   }
   
 
   scrollInicio() {
-    console.log('hola')
+    // console.log('hola')
     this.element.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
 
@@ -64,6 +101,22 @@ export class AppComponent{
     this.status = !this.status;
     // console.log('toggled');
   }
+
+
+
+  getScrollElement(): Element {
+    return document.scrollingElement || document.documentElement;
+  }
+
+  getYPosition(e: Event): number {
+    return (e.target as Element).scrollTop;
+  }
+
+
+
+  ngOnDestroy(): void {
+    this.listener();
+}
 
 
 

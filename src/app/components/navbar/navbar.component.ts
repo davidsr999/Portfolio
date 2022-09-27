@@ -22,10 +22,12 @@ export class NavbarComponent {
 
   onInicio() {
     this.inicioEmit.emit();
+    this.display = !this.display;
   }
 
   onSobreMi() {
     this.sobreMiEmit.emit();
+    this.display = !this.display;
   }
 
   
@@ -35,15 +37,17 @@ export class NavbarComponent {
 
   onProyectos() {
     this.proyectos.emit();
+    this.display = !this.display;
   }
 
   onContacto() {
     this.contacto.emit();
+    this.display = !this.display;
   }
 
 
   onsize() {
-    console.log('cambio')
+    // console.log('cambio')
   }
 
 
