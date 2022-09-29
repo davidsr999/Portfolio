@@ -49,6 +49,7 @@ img {
     display: flex;
     margin: auto;
     justify-content: space-between;
+    z-index: 9;
 }
 
 
@@ -70,7 +71,7 @@ img {
 
 
 
-@media (max-width: 750px) { 
+@media (max-width: 850px) { 
 
     .container {
         width: 90%;
