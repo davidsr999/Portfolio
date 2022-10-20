@@ -1,0 +1,242 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffebf8;
+}
+
+
+.prueba {
+    margin-top: 5rem;
+}
+.active {
+    width: 40px;
+    color: red;
+}
+
+.hidden {
+    width: 20px;
+    color: blue;
+}
+
+
+
+
+
+
+/*Portada con imagen*/
+.container-presentacion{
+    padding: 7rem 4rem;
+    padding-bottom: 9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(15rem, auto);
+    column-gap: 5px;
+    background-color: #ffebf8;
+
+}
+
+.cont-primero h1{
+    color: var(--mypurple);
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+.cont-primero p{
+    position: relative;
+    left: 2rem;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.8rem;
+    margin: 0;
+    margin-top: 1.2rem;
+    margin-right: 5rem;
+}
+
+
+.presentacion-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+
+.circle-purple {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    transform: scale(0.7);
+    background-color: var(--mydarkpurple);
+    
+}
+
+.presentacion-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion-info .header h1 {
+    margin: 0;
+    padding: 1rem 0;
+    color: #4831D1;
+    font-size: 3rem;
+    line-height: 3.4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.presentacion-info .descripcion {
+    margin-top: 2rem;
+}
+
+.presentacion-info .descripcion p{
+    color: #212121;
+    font-size: 1.2rem;
+}
+
+.presentacion-info .title {
+    color: #4831D4;
+    font-size: 3.2rem;
+    font-weight: 1000 !important;
+    line-height: 1.1;
+}
+
+
+
+
+/* Animacion imagen inicio*/
+.presentacion-image img {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    width: 400px;
+    animation: move-vector 8s  linear infinite;
+    box-shadow: none;
+    background-color: none;
+    border: none;
+    border-radius: 15px;
+    transition: .5s ease-in;
+}
+
+.presentacion-image img:hover {
+    width: 425px;
+    opacity: .9;
+}
+@keyframes move-vector {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25%{
+        transform: translate(50px, 0);
+
+    }
+    50%{
+        transform: translate(50px, -50px);
+    }
+
+    75%{
+        transform: translate(0, -50px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+
+
+/*Mis cartas de presentacion*/
+
+
+.contacto {
+    padding: 5rem;
+    background-color: #f9c24c;
+}
+
+
+
+
+/* media queries*/
+@media (max-width: 850px) {
+    .circle-purple {
+        display: none;
+    }
+    
+    .container-presentacion {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 6rem 1rem;
+    }
+
+    .cont-primero h1{
+        margin: 0;
+        margin-top: 6rem;
+        padding: 0;
+        line-height: 3rem;
+    }
+
+
+    .cont-primero p{
+        position: relative;
+        left: 4rem;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.5rem;
+        margin: 0;
+        margin-top: 1.2rem;
+        margin-right: 5rem;
+    }
+
+    .presentacion-image {
+        display: none;
+    }
+
+
+
+}
+
+.about-me {
+    margin: 0;
+    padding: 0;
+    /* scroll-padding: 2rem; */
+}
+
+
+
+.piedepagina {
+    width: 100%;
+    background-color: rgb(203, 38, 110);
+    color: #ffffff;
+    padding: 0;
+    padding-top: .4rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: small;
+}
+
+
+.piedepagina span {
+    color: #f3c763;
+    font-size: large;
+}
+
+
+.piedepagina .email, .telefono {
+    text-align: center;
+    position: relative;
+    bottom: 1rem;
+}
+
+
+
+
+/* Para version mobil */
+

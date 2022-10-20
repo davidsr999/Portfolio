@@ -25,6 +25,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { CardComponent } from './components/proyectos/card/card.component';
 import { Card2Component } from './components/proyectos/card2/card2.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -45,6 +46,7 @@ import {MatDividerModule} from '@angular/material/divider';
     SubauxiliarComponent,
     CardComponent,
     Card2Component,
+    HomeComponent,
 
   ],
   imports: [

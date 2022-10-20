@@ -1,11 +1,11 @@
 
 .cards {
-    margin: 12rem 0;
+    margin: 0;
+    padding: 8rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(221, 211, 232);
-    padding: 15rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,18 +22,18 @@
 
 .parte-superior .content {
     font-size: 1.2rem;
-    width: 30%;
+    width: 32%;
     text-align: start;
     line-height: 1.4rem;
     padding: 3rem 2rem;
-    margin: 0 8rem;
+    margin: 0 10rem;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: -2rem -2rem 2rem rgba(0, 0, 0, 0.6); 
 }
 
 #derecha {
-    margin-top: -1rem;
+    margin-top: -2rem;
     align-self: flex-end;
     box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.6);
 }
@@ -49,7 +49,7 @@
 
 .separador {
     width: 100%;
-    height: 8rem;
+    height: 2rem;
 }
 
 .card {
@@ -102,12 +102,12 @@
 
 @media (max-width: 850px) {
     .cards {
-        margin: 12rem 0;
+        margin: 0;
+        padding: 10rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: rgb(221, 211, 232);
-        padding: 15rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;

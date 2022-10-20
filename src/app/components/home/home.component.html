@@ -1,4 +1,4 @@
-<!-- <div class="container"  #inicio >
+<div class="container"  #inicio >
     <div  class="navbar" >
         <app-navbar (inicioEmit)="scrollInicio()"
         (sobreMiEmit)="scrollSobreMi()"
@@ -9,10 +9,10 @@
     
 
 
-
+    <!-- portada principal -->
     <div class="container-presentacion" >
-        <div class="presentacion-info" @inicioPaginaLeft>
-            <div class="cont-primero">
+        <div class="presentacion-info" [@inicioPaginaLeft]>
+            <!-- <div class="cont-primero">
                 <h1 class="an-1">Desarrollador Front end</h1>
                 <p>Soy un físico convertido en desarrollador Front End, me he formado en este campo por mi cuento y estoy deseando
                     poder obtener una oportunidad para trabajar <span class="circle-purple"></span> </p>
@@ -21,27 +21,48 @@
                 <h1>Físico Teórico</h1>
                 <p>Pasión por comprender cómo funciona el Universo tanto a escalas
                     infinitamente pequeñas como infinitamente grandes </p>
+            </div> -->
+
+            <div class="header">
+                <h1>Físico Teórico y</h1>
+                <h1 style="padding-top: 0;">Desarrollador Front end</h1>
             </div>
+
+            <div class="descripcion">
+                <p>Hola! Soy David, estudié física en la Universidad de Alicante y luego hice el máster de física avanzada en la 
+                    Universidad de Valencia. 
+                </p>
+
+                <p>Después de mis estudios descubrí el desarrollo Front end y he ido aprendiendo muchas cosas de ello, dándome cuenta de
+                     que es un campo 
+                    muy interesante en el que me gustaría trabajar. 
+                </p>
+            </div>
+
         </div>
 
-        <div class="presentacion-image" @inicioPaginaRight *ngIf="!hide">
+        <div class="presentacion-image" [@inicioPaginaRight]>
             <img src="assets/frontendImage.png" alt="IMAGE">
         </div>
     </div>
 
-
-    <div *ngIf="!hide" class="about-me" #sobreMi [ngStyle]="{'background-color': false ? 'red': ''}">
+    <!-- seccion sobre mi -->
+    <div id="sobremi" class="about-me" #sobreMi>
     <app-sobre-mi ></app-sobre-mi>
     </div>
 
-    <div *ngIf="!hide" class="proyectos" #proyecto>
+    <!-- seccion de proyectos -->
+    <div class="proyectos" #proyecto>
         <app-proyectos></app-proyectos>
     </div>
 
-    <div *ngIf="!hide" class="contacto" #contacto>
+    <!-- seccion de contacto -->
+    <div class="contacto" #contacto>
         <app-contacto></app-contacto>
     </div>
 
+
+    <!-- pie de pagina  -->
     <div class="piedepagina" >
         <h1>Diseñado y construido por <span>David Sanz</span> </h1>
         <div class="email">sanzruiz999@gmail.com</div>
@@ -52,8 +73,3 @@
  
   
 </div> 
- -->
-
-<router-outlet></router-outlet>
-
-<!-- <app-home></app-home> -->

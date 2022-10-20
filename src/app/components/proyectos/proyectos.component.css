@@ -124,9 +124,16 @@
 } */
 
 
+.container-proyectos {
+    background-color: #c6e9f4;
+    margin: 0;
+    padding: 8rem 0;
+}
+
 .cards2 {
     width: 100%;
     display: flex;
+    margin-bottom: 2rem;
 }
 
 .text-container {

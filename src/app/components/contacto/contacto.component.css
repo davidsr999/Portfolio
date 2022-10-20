@@ -1,6 +1,10 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+.container-contact {
+  background-color: #f9c24c;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -10,7 +14,7 @@
   }
 
 .ancho {
-  width: 20rem;
+  width: 24rem;
   }
 
 

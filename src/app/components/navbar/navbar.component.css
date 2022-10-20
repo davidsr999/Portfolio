@@ -1,5 +1,5 @@
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -7,8 +7,9 @@
     align-items: center;
     background-color: var(--secondary);
     color: white;
-    z-index: 11;
+    z-index: 15;
     transition: 1s ease-in-out;
+    padding: .5rem 0;
    
 }
 
@@ -98,13 +99,13 @@
 
 .toggle-button {
     position: absolute;
-    top: 0.5rem;
-    right: 1rem;
+    top: 1rem;
+    right: 1.2rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height: 25px;
 }
 
 .toggle-button .bar {
@@ -123,6 +124,10 @@
 
 
 @media (max-width: 850px) {
+
+    .navbar {
+        padding: 1rem;
+    }
     .toggle-button {
         margin-top: 5px;
         display: flex;
