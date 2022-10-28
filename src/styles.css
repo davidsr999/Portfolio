@@ -25,7 +25,7 @@ html, body {
     box-sizing: border-box;
     width: 100;
     background-color: var(--primary);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -35,5 +35,7 @@ html, body {
 .hover-effect:hover {
     transform: scale(1.05);
 }
+
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

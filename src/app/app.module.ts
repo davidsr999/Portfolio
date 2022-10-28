@@ -16,8 +16,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
-import { AuxiliarComponent } from './auxiliar/auxiliar.component';
-import { SubauxiliarComponent } from './auxiliar/subauxiliar/subauxiliar.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
@@ -42,8 +40,6 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     ProyectosComponent,
     SobreMiComponent,
-    AuxiliarComponent,
-    SubauxiliarComponent,
     CardComponent,
     Card2Component,
     HomeComponent,

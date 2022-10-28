@@ -22,8 +22,8 @@
 
 .parte-superior .content {
     font-size: 1.2rem;
-    width: 32%;
-    text-align: start;
+    width: 35%;
+    text-align: center;
     line-height: 1.4rem;
     padding: 3rem 2rem;
     margin: 0 10rem;
@@ -52,9 +52,12 @@
     height: 2rem;
 }
 
+
+/* Carta con nivles de progreso */
+
 .card {
     width: 30rem;
-    height: 30rem;
+    /* height: 30rem; */
     margin-top: 20px;
     padding: 2rem 1rem;
     background: rgb(2,0,36);
@@ -68,11 +71,25 @@
 .card-title {
     text-align: center;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.card-title p {
+    margin: 0;
+    padding: 0;
+    margin-left: 4px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e0b1cb;
 }
 
 .bottom-subcard {
     text-align: center;
+    color: #f2f2f2;
+    font-size: 1.1rem;
 }
 
 .bottom-subcard p {
@@ -93,7 +110,7 @@
 }
 
 .progress-bar {
-    width: 15rem;
+    width: 80%;
 }
 
 
