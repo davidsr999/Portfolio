@@ -113,6 +113,17 @@
     width: 80%;
 }
 
+.reveal {
+    position: relative;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 
 
 

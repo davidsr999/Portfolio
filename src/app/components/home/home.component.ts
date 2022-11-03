@@ -37,35 +37,18 @@ export class HomeComponent implements OnInit {
   @ViewChild('contacto') element3!: ElementRef;
   @ViewChild('piedepagina') element4!: ElementRef;
   
-  @HostListener('window:scroll') onScroll(e: Event): void {
-    // console.log(this.getYPosition(e));
- }
-
-  listener: any;
+//   @HostListener('window:scroll') onScroll(e: Event): void {
+//     // console.log(this.getYPosition(e));
+//  }
 
   hide = false;
   is_phone = false;
   private responsive: BreakpointObserver
-  constructor(private renderer2: Renderer2,  ) {
-    // this.listener = this.renderer2.listen('window', 'scroll', (e) => {
-    //   console.log('scroll');
-    // })
+  constructor( ) {
   }
 
   ngOnInit(): void {
-    // this.responsive.observe([
-    //   '(max-width: 750px)'
-    // ]).subscribe(result => {
-    //   if(result.matches){
-    //     this.hideCircles = true;
-    //     this.hide = true;
-    //     console.log(this.hideCircles);
-    //   } else {
-    //     this.hideCircles  = false;
-    //     this.hide = false;
-    //     console.log(this.hideCircles);
-    //   }
-    // })
+
   }
   
 
@@ -74,12 +57,7 @@ export class HomeComponent implements OnInit {
   }
 
   scrollSobreMi() {
-    // window.scrollTo({top: 815.3333435058594, behavior: 'smooth'});  
-    this.element1.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start'}) 
-    // const yOffset = -10; 
-    // const element = this.element1;
-    // const y = element.nativeElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    // console.log(y)                    
+    this.element1.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start'})              
   }
 
   scrollProyectos() {
@@ -105,7 +83,6 @@ export class HomeComponent implements OnInit {
 
 
   ngOnDestroy(): void {
-    // this.listener();
 }
 
 
